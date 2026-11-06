@@ -11,7 +11,9 @@
    
     body{background-image: url(https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1600);
         background-repeat: no-repeat;
-        background-size: cover;}
+        background-size: cover;
+        font-family: Tahoma;
+        }
 
    .container{background-color: rgba(0, 0, 0, 0.500);
             color: white;
@@ -19,13 +21,16 @@
             padding: 20px;
             width: 33%;
             height: auto;
-            }
+            align-self: center;
+            margin: 0 auto;}
 
 </style>
 
 </head>
 <body>
     
+<br>
+
 <div class="container">
 
         <h1 style="text-align: center;">Non-Metal Elements</h1>
@@ -33,14 +38,18 @@
         <br>
 
         <label for="ElementInput">Element Symbol</label><br>
-        <input type="text" id="ElementInput" placeholder="H" style="width: 98.42%;">
-        <br>
+        <input type="text" id="ElementInput" placeholder="H" style="width: 50%;">
+        <br><br>
 
-        <button py-click="SearchSymbol" style="width: 100%; align-items: center;">Search</button>
+        <button py-click="SearchSymbol" style="width: 100%; border: 10px white; background-color: white; color: black; font-family: Tahoma;">Search</button>
+
+        <br><br>
+        <hr>
+        
 
         <div class="result">
 
-            <h3>Result</h3>
+            <h3 style="text-align: center;">Result</h3>
 
             <p>Element Symbol: <span id = "Symbol"> </span> </p>
             <p>Element Name: <span id = "EName"> </span> </p>
@@ -50,6 +59,8 @@
         </div>
 
 </div>
+
+<p style="text-align: center; color: white;">@2026 Maria Alexandria Coronel | 10 - Ruby </p>
 
 <script type="py" src="main.py"></script>
 
