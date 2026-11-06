@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+<style>
+   
+    body{background-image: url(https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1600);
+        background-repeat: no-repeat;
+        background-size: cover;}
+
+   .container{background-color: rgba(0, 0, 0, 0.500);
+            color: white;
+            margin: 20px;
+            padding: 20px;
+            width: 33%;
+            height: auto;
+            }
+
+</style>
+
+</head>
+<body>
+    
+<div class="container">
+
+        <h1 style="text-align: center;">Non-Metal Elements</h1>
+        <p style="text-align: justify;">Enter the symbol of a non-metal element (H, He, C).</p>
+        <br>
+
+        <label for="ElementInput">Element Symbol</label><br>
+        <input type="text" id="ElementInput" placeholder="H" style="width: 98.42%;">
+        <br>
+
+        <button py-click="SearchSymbol" style="width: 100%; align-items: center;">Search</button>
+
+        <div class="result">
+
+            <h3>Result</h3>
+
+            <p>Element Symbol: <span id = "Symbol"> </span> </p>
+            <p>Element Name: <span id = "EName"> </span> </p>
+            <p>Atomic Number: <span id = "AtomicNo"> </span> </p>
+            <p>Atomic Mass: <span id = "AtomicMass"> </span> </p>
+
+        </div>
+
+</div>
+
+<script type="py" src="main.py"></script>
+
+</body>
+</html>
