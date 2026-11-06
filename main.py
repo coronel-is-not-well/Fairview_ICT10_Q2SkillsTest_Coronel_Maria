@@ -16,15 +16,15 @@ NonMetals = {"H":("Hydrogen", 1, 1.008),
              "Kr":("Krypton", 36, 83.8),
              "I":("Iodine", 53, 126.9),
              "Xe":("Xenon", 54, 131.29),
-             "Rn":("Radon", 86, 86),} 
+             "Rn":("Radon", 86, 86),} # dictionaries of the elements (symbol : (name, atomic number, atomic mass))
 
-def SearchSymbol(e):
+def SearchSymbol(e): #function
 
-    ElementSym = document.getElementById("ElementInput").value.capitalize()
+    ElementSym = document.getElementById("ElementInput").value.capitalize() #getting the value of what the user typed in
 
-    result = NonMetals.get(ElementSym, ('Element not found', "-", "-"))
+    result = NonMetals.get(ElementSym, ('Element not found', "-", "-")) # seeing if what was inputed is in the dictionaries, and when not, element not found will show up
 
     document.getElementById("Symbol").innerText = ElementSym
     document.getElementById("EName").innerText = result[0]
     document.getElementById("AtomicNo").innerText = result[1]
-    document.getElementById("AtomicMass").innerText = result[2]
+    document.getElementById("AtomicMass").innerText = result[2] # getting the values then making it appear on the main page
